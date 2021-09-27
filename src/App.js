@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Mainpage from './pages/Mainpage';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Recipepage from './pages/Recipepage';
+import { useState } from 'react';
 
 function App() {
+
+  const [recipeId, setRecipeIdState] = useState(0)
+
+  const recipeIdChanger =(id)=>{
+    setRecipeIdState(id)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Mainpage recipeIdChanger={recipeIdChanger}/>
+        </Route> 
+        <Route path={`/recipepage=${recipeId}`}>
+          <Recipepage id={recipeId}/>
+        </Route>
+      </Switch>     
+    </Router>
+      
+    
   );
 }
 

@@ -1,0 +1,83 @@
+.mainpage{
+     background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+}
+.mainpage-block{
+    text-align: center;
+    margin: 5rem 0 3rem 0;
+    flex-direction: column;
+}
+.mainpage-block h1{
+    font-size: 3.5rem;
+}
+.mainpage-block button,
+.btn{
+    border: none;
+    background-color: transparent;
+    margin: 0 5px;
+    color: whitesmoke;
+}
+.mainpage-block button:hover{
+    cursor: pointer;
+}
+.searchbox{
+    margin-top: 2rem;  
+}
+.searchbox input{    
+    font-size: 1.5rem;
+}
+
+.foodcardblock {    
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+/*Pagination style*/
+.pagination{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+.pagination li{
+    margin: 0 2rem;
+    cursor: pointer;
+    padding: .5rem;
+    
+}
+.paginationActive{
+    background-color: rgba(128, 128, 128, 0.507);
+    transition: .5s;   
+    
+} 
+
+@media (min-width:500px){
+    .mainpage-block h1{
+        font-size: 4.5rem;
+    }
+    .mainpage-block h2{
+        font-size: 2rem;
+    }
+    .searchbox input{    
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1000px){
+    
+}
+
+@media (min-width:1366px){
+
+    .foodcardblock {    
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: center;    
+    margin: 0 5rem;
+}
+    .mainpage-block h1{
+        font-size: 6rem;
+    }
+}

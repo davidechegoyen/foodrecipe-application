@@ -1,0 +1,47 @@
+.card{
+    width: 324px;   
+    margin: 4rem 0rem;
+    background-color: rgb(31, 31, 31);
+    border-radius: 1rem;
+}
+.card-content{
+    width: 90%;    
+    text-align: center;
+    margin: 0 auto;   
+}
+
+.card-content > h2,
+.card-content > button{
+    margin: 1rem 0;
+}
+
+.card-content button{
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 8px 20px;
+    margin: 1rem 0;
+    border-radius: 5px;  
+    font-weight: bold;
+}
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+
+@media (min-width:500px) {
+    .card{
+        width: 450px;
+    }
+}
+@media (min-width:600px) {
+    .card{
+        margin: 4rem 2rem;
+    }
+}
