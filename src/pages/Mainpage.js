@@ -66,8 +66,8 @@ const Mainpage = ({recipeIdChanger}) => {
         <div className="mainpage page">
             <div className="content">
                 <div className="mainpage-block block">
-                    <h1>Food Mama</h1>
-                    <h2>Online Recipe App</h2>
+                    <h1>Food Mama</h1>                    
+                    <h3>Type in your favorite ingredient and we'll find a recipe for you ;)</h3>
                     <div className="searchbox">
                         <input onChange={(e)=>setSearchState(e.currentTarget.value)}/><button onClick={onClickHandlerSearchButton}><i className="fas fa-search fa-lg"></i></button>
                     </div>                    
