@@ -13,7 +13,7 @@ function App() {
   }
   
   return (
-    <Router>
+    <Router basename='foodrecipe-application'>
       <Switch>
         <Route exact path="/">
           <Mainpage recipeIdChanger={recipeIdChanger}/>
